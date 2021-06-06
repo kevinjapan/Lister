@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Lister React JS Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Lister and StaticLister provide paginated list views of simple datasets.
 
-## Available Scripts
+## Configuration
 
-In the project directory, you can run:
+Lister can be configured to pull datasets from a database source, while StaticLister pulls data from JSON files.
 
 ### `npm start`
 
