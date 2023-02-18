@@ -9,7 +9,7 @@ Lister pulls datasets from a database source, while StaticLister pulls data from
 ### configuration parameters
 
 ```
-    let lister_config = {
+let lister_config = {
     l_service: service,
     l_service_filter: service_filter,
     l_item_path: `/${props.domain}`,
@@ -21,7 +21,7 @@ Lister pulls datasets from a database source, while StaticLister pulls data from
     l_paginate:true,
     l_rows_per_page:6,
     l_type:1
-    }
+}
 ```
 
 ## Example Provided
@@ -29,14 +29,14 @@ Lister pulls datasets from a database source, while StaticLister pulls data from
 In the simple example given, StaticLister is called by the client component LessonPlans and configured to pull data from JSON files.
 
 ```
-               <StaticLister
-                   api={props.api}
-                   page={props.lessons_page}
-                   view={props.view}
-                   config={lister_config}
-                   onOpenListItem={openListItem}
-                   onChangePage={changePage}
-                   onChangeView={changeView}
-               />
+<StaticLister
+    api={props.api}
+    page={props.lessons_page}
+    view={props.view}
+    config={lister_config}
+    onOpenListItem={openListItem}
+    onChangePage={changePage}
+    onChangeView={changeView}
+/>
 ```               
                
