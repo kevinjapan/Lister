@@ -63,7 +63,8 @@ List_Meta JSON configures how the front-end displays the list:
                     "input_len":""
                 },
                 {
-                    "id":2,"col":"title",
+                    "id":2,
+                    "col":"title",
                     "list_col":"1",
                     "styles":"col-12 display-5 text-white",
                     "default":"",
