@@ -26,7 +26,7 @@ let lister_config = {
 
 ## Example Provided
 
-In the simple example given, StaticLister is called by the client component LessonPlans and configured to pull data from JSON files.
+In the example code, StaticLister is called by the client component LessonPlans and configured to pull data from JSON files.
 
 ```
 <StaticLister
@@ -38,5 +38,73 @@ In the simple example given, StaticLister is called by the client component Less
     onChangePage={changePage}
     onChangeView={changeView}
 />
-```               
-               
+```
+
+
+## List Configuraton JSON file    
+
+List_Meta JSON configures how the front-end displays the list:
+```
+{
+    "list_meta":
+        {
+            "service" :"lessons",
+            "cols":[
+                {
+                    "id":1,
+                    "col":"id",
+                    "list_col":"0",
+                    "styles":"",
+                    "default":"",
+                    "on_form":"0",
+                    "edit":"0",
+                    "input":"",
+                    "input_type":"",
+                    "input_len":""
+                },
+                {
+                    "id":2,"col":"title",
+                    "list_col":"1",
+                    "styles":"col-12 display-5 text-white",
+                    "default":"",
+                    "on_form":"1",
+                    "edit":"0",
+                    "input":"",
+                    "input_type":"",
+                    "input_len":""
+                }
+            ]
+        }
+}
+```
+
+
+## Lessons List JSON file  
+
+Lessons_List JSON contains the lesson headline details:
+```
+{
+    "lessons": [
+        {
+            "title":"Animals",
+            "slug":"Animals",
+            "id":"130",
+            "type":"2",
+            "level":"1",
+            "tagline":"animals and pets"
+            "summary":"Discover your students' relationships with animals.",
+            "updated":"2021-01-21"
+        },
+        {
+            "title":"Blocks",
+            "slug":"Blocks",
+            "id":"15",
+            "type":"1",
+            "level":"2",
+            "tagline":"block your opponent",
+            "summary":"Two teams compete to connect blocks across a grid of letters drawn on the board.",
+            "updated":"2021-01-21"
+        }
+    ]
+}
+```
